@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
 
+:root {
+  --color-1: #673ab7;
+}
 main {
+  padding-top: 50px;
   overflow: hidden;
 }
 
@@ -51,14 +55,14 @@ main {
   background-color: white;
   min-width: 235px;
   border-radius: 5px;
-  border-left: 5px solid #9e78e0;
+  border-left: 5px solid var(--color-1);
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
 }
 
 .notifs-title {
   font-size: medium;
   font-weight: 600;
-  color: #9e78e0;
+  color: var(--color-1);
   margin-bottom: 5px;
 }
 
@@ -87,7 +91,7 @@ main {
   width: 41%;
   background-color: white;
   border-radius: 7px;
-  border-top: 35px solid #9e78e0;
+  border-top: 35px solid var(--color-1);
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
   margin-right: 20px;
 }
@@ -158,7 +162,7 @@ main {
 
 .product-btn {
   color: white;
-  background-color: rgb(165, 16, 165);
+  background-color: var(--color-1);
   text-decoration: none;
   padding: 7px;
   padding-bottom: 5px;
