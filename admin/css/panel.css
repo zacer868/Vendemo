@@ -14,7 +14,6 @@ main {
 #profile {
   box-sizing: border-box;
   width: 90vw;
-  margin-left: 10%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -29,8 +28,7 @@ main {
 }
 #orders {
   display: inline-block;
-  grid-template-columns: auto;
-  margin-left: 12%;
+  margin-left: auto;
 }
 
 .title {
