@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
+
+main {
+  overflow: hidden;
+}
+
+#panel,
+#orders,
+#product-box,
+#profile {
+  box-sizing: border-box;
+  width: 90vw;
+  margin-left: 10%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Anek Telugu";
+  margin-top: 20px;
+}
+
+#panel {
+  width: 1200px;
+  min-width: 700px;
+}
+#orders {
+  display: inline-block;
+  grid-template-columns: auto;
+  margin-left: 12%;
+}
+
+.title {
+  /* margin: 3% 0% 0% 12%; */
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.dash-title {
+  margin: 2% 0% 0% 12%;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.notifs {
+  text-align: start;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  margin: 10px;
+  background-color: white;
+  min-width: 235px;
+  border-radius: 5px;
+  border-left: 5px solid #9e78e0;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
+}
+
+.notifs-title {
+  font-size: medium;
+  font-weight: 600;
+  color: #9e78e0;
+  margin-bottom: 5px;
+}
+
+.quant {
+  font-size: medium;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.822);
+  font-size: large;
+}
+
+/* Orders */
+
+.itembox {
+  height: auto;
+  overflow: hidden;
+  transition: all 5s ease;
+}
+
+.order-box {
+  display: inline-block;
+  z-index: -1;
+  height: fit-content;
+  position: relative;
+  margin-top: 10px;
+  height: auto;
+  width: 41%;
+  background-color: white;
+  border-radius: 7px;
+  border-top: 35px solid #9e78e0;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
+  margin-right: 20px;
+}
+
+#hide {
+  position: relative;
+  display: inline-block;
+  width: 3%;
+  background-color: aqua;
+}
+
+.order-box.co {
+  border-top: 35px solid rgb(89, 219, 89);
+}
+
+.details {
+  margin: 10px;
+}
+
+.details.ico {
+  margin: 10px;
+  color: lightcoral;
+}
+
+.details.co {
+  margin: 10px;
+
+  color: rgb(111, 235, 111);
+}
+
+/* Stats */
+
+/* Products */
+
+#products {
+  padding-top: 20px;
+}
+
+.product-box {
+  display: inline-block;
+  height: auto;
+  width: 83%;
+  background-color: white;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.144);
+
+  border-radius: 9px;
+}
+
+.listing {
+  margin: 10px;
+  display: flex;
+}
+
+.listing p {
+  margin: 10px;
+  width: 15%;
+}
+
+.listing img {
+  width: 50px;
+  margin: 0px 5px;
+}
+
+.addlisting {
+  margin-left: 75%;
+  margin-top: 2.5%;
+}
+
+.product-btn {
+  color: white;
+  background-color: rgb(165, 16, 165);
+  text-decoration: none;
+  padding: 7px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.product-btn.del {
+  background-color: rgb(241, 53, 53);
+}
+
+.product-btn.edi {
+  background-color: rgb(241, 181, 53);
+}
+
+/* Profile */
+
+.profile-box {
+  display: inline-block;
+  height: auto;
+  width: 60%;
+  background-color: white;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.144);
+  border-radius: 9px;
+}
+
+.imgcont {
+  width: 45%;
+  display: inline-block;
+}
+
+.info {
+  height: 45%;
+  width: 45%;
+  display: inline-block;
+}
+
+.info p {
+}
+
+.imgcont img {
+  margin: 10px;
+  width: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #panel {
+    display: inline-block;
+    width: 700px;
+    margin-left: 100px;
+  }
+  .notifs {
+    display: block;
+    width: 75%;
+    min-width: 75px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  #panel {
+    display: inline-block;
+    width: 700px;
+    margin-left: 50px;
+  }
+  .notifs {
+    display: block;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dash-title {
+    margin: 5% 0% -5% 27%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .notifs {
+    width: 25%;
+  }
+}
+
+/* Orders */
+
+@media (max-width: 585px) {
+  .details {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 450px) {
+  .order-box {
+    display: block;
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .order-box {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+  }
+}

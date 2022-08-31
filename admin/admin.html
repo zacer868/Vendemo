@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendemo Admin</title>
+    <!-- Boxicons CDN link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/panel.css" />
+  </head>
+</body>
+  <aside>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img src="../admin/assets/images/logo.svg" alt="" />
+          <div class="logo_name">Vendemo Admin</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="bx bx-search up"></i>
+            <input type="text" placeholder="Search..." />
+          </a>
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+
+        <li>
+          <a href="#orders">
+            <i class="bx bx-cart"></i>
+            <span class="links_name">Orders</span>
+          </a>
+          <span class="tooltip">Orders</span>
+        </li>
+        <li>
+          <a href="#products">
+            <i class="bx bxs-t-shirt"></i>
+            <span class="links_name">Products</span>
+          </a>
+          <span class="tooltip">Products</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Profile</span>
+          </a>
+          <span class="tooltip">Profile</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+          <span class="tooltip">Log out</span>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBtn = document.querySelector(".bx-search");
+
+      btn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+
+      searchBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+      };
+    </script>
+  </aside>
+  <main>
+
+    <h2 class="dash-title" id="dashboard">Dashboard</h2>
+
+    <div id="panel">
+
+      <div class="notifs ge">
+        <div class="holder">
+          <div class="notifs-title ge">Gross Earnings</div>
+          <div class="quant">$40,000</div>
+        </div>
+      </div>
+
+      <div class="notifs io">
+        <div class="notifs-title io">Incomplete Orders</div>
+        <div class="quant">3</div>
+      </div>
+      <div class="notifs co">
+        <div class="notifs-title co">Completed Oders</div>
+        <div class="quant">12</div>
+      </div>
+      <div class="notifs pl">
+        <div class="notifs-title pl">Product Likes</div>
+        <div class="quant">4</div>
+      </div>
+    </div>
+    <!-- Orders -->
+    
+
+    <div id="orders">
+      <h2 class="title">Orders</h2>
+      <div class="order-box">
+        <div class="itembox">
+          <p class="details ico">Incompleted</p>
+
+          <p class="details">Name: Giovanni Toussaint</p>
+          <p class="details">Phone: 1(868)470-0652</p>
+          <p class="details">Address: #21 Kathleen Street</p>
+          <p class="details">Items: PlayerPolo</p>
+          <p class="details">Size: XL</p>
+          <p class="details">Total Cost: $560</p>
+          <p class="details">Paid: Yes</p>
+        </div>
+      </div>
+
+      <div class="order-box">
+        <div class="itembox">
+          <p class="details co">Completed</p>
+
+          <p class="details">Name: Giovanni Toussaint</p>
+          <p class="details">Phone: 1(868)470-0652</p>
+          <p class="details">Address: #21 Kathleen Street</p>
+          <p class="details">Items: PlayerPolo</p>
+          <p class="details">Size: XL</p>
+          <p class="details">Total Cost: $560</p>
+          <p class="details">Paid: Yes</p>
+        </div>
+      </div>
+
+      <div class="order-box">
+        <div class="itembox" >
+          <p class="details co">Completed</p>
+
+          <p class="details">Name: Giovanni Toussaint</p>
+          <p class="details">Phone: 1(868)470-0652</p>
+          <p class="details">Address: #21 Kathleen Street</p>
+          <p class="details">Items: PlayerPolo</p>
+          <p class="details">Size: XL</p>
+          <p class="details">Total Cost: $560</p>
+          <p class="details">Paid: Yes</p>
+        </div>
+      </div>
+
+      <div class="order-box" >
+        <div class="itembox" >
+          <p class="details co">Completed</p>
+          <p class="details">Name: Giovanni Toussaint</p>
+          <p class="details">Phone: 1(868)470-0652</p>
+          <p class="details">Address: #21 Kathleen Street</p>
+          <p class="details">Items: PlayerPolo</p>
+          <p class="details">Size: XL</p>
+          <p class="details">Total Cost: $560</p>
+          <p class="details">Paid: Yes</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <h2 class="dash-title" id="products">Products</h2>
+
+    <div id="product-box">
+      
+      <div class="product-box">
+        <div class="listing">
+          <p>Product</p>
+          <p>Item Cost</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>Product Size</p>
+          <a href="" class="product-btn add">Add Product</a>
+        </div>
+        <hr />
+
+        <div class="listing">
+          <p>Hoodiee</p>
+          <p>$560TTD</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>XS,S,M,L,XL</p>
+          <a href="" class="product-btn edi">Edit</a>
+          <a href="" class="product-btn del">Delete</a>
+        </div>
+
+        <div class="listing">
+          <p>Hoodiee</p>
+          <p>$560TTD</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>XS,S,M,L,XL</p>
+          <a href="" class="product-btn edi">Edit</a>
+          <a href="" class="product-btn del">Delete</a>
+        </div>
+
+        <div class="listing">
+          <p>Hoodiee</p>
+          <p>$560TTD</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>XS,S,M,L,XL</p>
+          <a href="" class="product-btn edi">Edit</a>
+          <a href="" class="product-btn del">Delete</a>
+        </div>
+
+        <div class="listing">
+          <p>Hoodiee</p>
+          <p>$560TTD</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>XS,S,M,L,XL</p>
+          <a href="" class="product-btn edi">Edit</a>
+          <a href="" class="product-btn del">Delete</a>
+        </div>
+
+        <div class="listing">
+          <p>Hoodiee</p>
+          <p>$560TTD</p>
+          <img src="img/hoodie.jpg" alt="product image" />
+          <p>XS,S,M,L,XL</p>
+          <a href="" class="product-btn edi">Edit</a>
+          <a href="" class="product-btn del">Delete</a>
+        </div>
+        
+
+      </div>
+      
+      </div>
+    </div>
+    <div id="profile">
+      <div class="profile-box">
+        <div class="imgcont">
+          <img src="img/hoodie.jpg" alt="">
+          <p>Est. 2019</p>
+        </div>
+        
+        <div class="info">
+          <p>Name</p>
+          <p>Email</p>
+          <p>Phone</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div id="logout"></div>
+  </main>
+  </body>
+</html>
