@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
 
 :root {
-  --color-1: #673ab7;
+  --color-1: white;
 }
 body {
   line-height: 1.5;
@@ -35,12 +35,12 @@ ul {
 }
 /*header*/
 .header {
-  background-color: var(--color-1);
-  padding: 12px 0;
+  background-color: #ffffff;
+  padding: 6px 0;
   position: fixed;
   z-index: 99;
   width: 100%;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.144);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
 }
 .header .logo,
 .header .nav {
@@ -48,7 +48,7 @@ ul {
 }
 .header .logo a {
   font-size: 20px;
-  color: #ffffff;
+  color: #000000;
   text-transform: capitalize;
 }
 .header .nav ul li {
@@ -59,13 +59,13 @@ ul {
   display: block;
   font-size: 20px;
   padding: 10px 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 1);
   text-transform: capitalize;
   transition: all 0.5s ease;
 }
 .header .nav ul li a:hover,
 .header .nav ul li a.active {
-  color: #ffffff;
+  color: #000000;
 }
 .header #nav-check {
   position: absolute;
@@ -128,7 +128,7 @@ ul {
     visibility: visible;
   }
   .header #nav-check:focus ~ .nav-toggler {
-    box-shadow: 0 0 15px #000000;
+    /* box-shadow: 0 0 15px #c4c4c4; */
   }
   .header #nav-check:checked ~ .nav-toggler span {
     background-color: transparent;

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
 
 :root {
-  --color-1: #673ab7;
+  --color-1: #6f42c1;
+  --color-2: #007bff;
 }
 main {
   padding-top: 50px;
@@ -9,33 +10,28 @@ main {
 }
 
 #panel,
-#orders,
 #product-box,
 #profile {
   box-sizing: border-box;
-  width: 90vw;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Anek Telugu";
   margin-top: 20px;
+  width: 75%;
+  margin: auto;
 }
 
-#panel {
-  width: 1200px;
-  min-width: 700px;
-}
 #orders {
   display: inline-block;
-  margin-left: auto;
-}
-
-.title {
-  /* margin: 3% 0% 0% 12%; */
-  font-size: 30px;
-  font-weight: 300;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anek Telugu";
   margin-top: 20px;
+  width: 100%;
+  margin: auto;
 }
 
 .dash-title {
@@ -46,12 +42,12 @@ main {
 }
 
 .notifs {
-  text-align: start;
+  width: 100%;
+  text-align: center;
   display: inline-block;
   padding: 15px 15px 25px;
   margin: 10px;
   background-color: white;
-  min-width: 235px;
   border-radius: 5px;
   border-left: 5px solid var(--color-1);
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
@@ -59,7 +55,7 @@ main {
 
 .notifs-title {
   font-size: medium;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-1);
   margin-bottom: 5px;
 }
@@ -82,23 +78,17 @@ main {
 .order-box {
   display: inline-block;
   z-index: -1;
-  height: fit-content;
   position: relative;
   margin-top: 10px;
   height: auto;
-  width: 41%;
+  width: 25%;
+  min-width: 200px;
   background-color: white;
   border-radius: 7px;
   border-top: 35px solid var(--color-1);
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.144);
-  margin-right: 20px;
-}
 
-#hide {
-  position: relative;
-  display: inline-block;
-  width: 3%;
-  background-color: aqua;
+  margin: 10px 5px 10px 5px;
 }
 
 .order-box.co {
@@ -207,47 +197,21 @@ main {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+
+@media (max-width: 1000px) {
   #panel {
-    display: inline-block;
-    width: 700px;
-    margin-left: 100px;
-  }
-  .notifs {
     display: block;
-    width: 75%;
-    min-width: 75px;
-    padding: 10px;
+    margin: 0 auto;
   }
-}
 
-@media (max-width: 850px) {
-  #panel {
-    display: inline-block;
-    width: 700px;
-    margin-left: 50px;
-  }
-  .notifs {
-    display: block;
-    width: 50%;
-  }
-}
-
-@media (max-width: 500px) {
-  .dash-title {
-    margin: 5% 0% -5% 27%;
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 350px) {
-  .notifs {
-    width: 25%;
+  #orders {
+    /* display: block; */
+    /* margin: 0 auto; */
   }
 }
 
 /* Orders */
-
+/* 
 @media (max-width: 585px) {
   .details {
     font-size: medium;
@@ -266,6 +230,6 @@ main {
   .order-box {
     display: block;
     width: 80%;
-    margin-left: 20px;
+    margin-left: 20px; 
   }
-}
+}*/
