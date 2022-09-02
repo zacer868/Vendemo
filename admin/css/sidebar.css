@@ -114,7 +114,9 @@ ul {
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: var(--color-1);
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
+
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     visibility: hidden;
@@ -126,19 +128,21 @@ ul {
   .header #nav-check:checked ~ .nav {
     opacity: 1;
     visibility: visible;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
-  .header #nav-check:focus ~ .nav-toggler {
-    /* box-shadow: 0 0 15px #c4c4c4; */
-  }
+
   .header #nav-check:checked ~ .nav-toggler span {
     background-color: transparent;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
   .header #nav-check:checked ~ .nav-toggler span::before {
     top: 0;
     transform: rotate(45deg);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
   .header #nav-check:checked ~ .nav-toggler span::after {
     top: 0;
     transform: rotate(-45deg);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
 }
