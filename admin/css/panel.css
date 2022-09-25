@@ -21,6 +21,10 @@ main {
   /* margin: auto; */
 }
 
+#products {
+  margin-bottom: 10px;
+}
+
 #panel {
   box-sizing: border-box;
   margin: auto;
@@ -30,7 +34,7 @@ main {
   justify-content: center;
 }
 
-#orders {
+#orders-div {
   display: inline-block;
   box-sizing: border-box;
   text-align: center;

@@ -87,10 +87,11 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 2px;
 }
 .nav-toggler span {
   display: block;
+  left: 40px;
   height: 2px;
   width: 20px;
   background-color: var(--color-1);
@@ -112,6 +113,11 @@ ul {
   top: 6px;
 }
 @media (max-width: 991px) {
+  .header .logo,
+  .header .nav {
+    padding: 10px 7px;
+  }
+
   .nav-toggler {
     display: flex;
   }
@@ -121,9 +127,7 @@ ul {
     top: 100%;
     width: 100%;
     background-color: white;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
-
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45); */
     opacity: 0;
     visibility: hidden;
   }
@@ -134,7 +138,7 @@ ul {
   .header #nav-check:checked ~ .nav {
     opacity: 1;
     visibility: visible;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
   }
 
   .header #nav-check:checked ~ .nav-toggler span {
