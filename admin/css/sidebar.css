@@ -36,7 +36,7 @@ ul {
 /*header*/
 .header {
   background-color: #ffffff;
-  padding: 6px 0;
+  padding: 0px 0;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -44,7 +44,7 @@ ul {
 }
 .header .logo,
 .header .nav {
-  padding: 0 15px;
+  padding: 0 7px;
 }
 .header .logo a {
   font-size: 20px;
@@ -54,7 +54,7 @@ ul {
 
 .logo_name img {
   transform: translateY(2.5px);
-  width: 25px;
+  width: 30px;
 }
 .header .nav ul li {
   display: inline-block;
@@ -68,10 +68,11 @@ ul {
   text-transform: capitalize;
   transition: all 0.5s ease;
 }
-.header .nav ul li a:hover,
-.header .nav ul li a.active {
-  color: #000000;
+.header .nav ul li a:hover {
+  /* .header .nav ul li a.active { */
+  color: var(--color-1);
 }
+
 .header #nav-check {
   position: absolute;
   opacity: 0;
@@ -120,7 +121,6 @@ ul {
     top: 100%;
     width: 100%;
     background-color: white;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.45);
 
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
@@ -138,7 +138,6 @@ ul {
 
   .header #nav-check:checked ~ .nav-toggler span {
     background-color: transparent;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
   .header #nav-check:checked ~ .nav-toggler span::before {
     top: 0;
@@ -148,6 +147,5 @@ ul {
   .header #nav-check:checked ~ .nav-toggler span::after {
     top: 0;
     transform: rotate(-45deg);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.45);
   }
 }
