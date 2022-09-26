@@ -2,7 +2,7 @@
   padding: 2.5rem 2rem;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 1000px;
+  width: 500px;
 
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
   margin: 1rem;
@@ -16,10 +16,10 @@
   border-radius: 50%;
 }
 
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
 
 .card img {
   width: 8rem;
@@ -53,18 +53,12 @@ img {
 .stats li {
   min-width: 5rem;
 }
-.stats li h3 {
-  /* font-size: 0.99rem; */
-}
-.stats li h4 {
-  /* font-size: 0.75rem; */
-}
 
 .links button {
   font-family: "Poppins", sans-serif;
   min-width: 140px;
   padding: 0.6rem;
-  border: 1px solid #222;
+  border: 1px solid rgb(155, 155, 155);
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
@@ -72,13 +66,13 @@ img {
 }
 .links .follow,
 .links .view:hover {
-  background-color: #222;
+  background-color: #6f42c1;
   color: #fff;
 }
 .links .view,
 .links .follow:hover {
   background-color: transparent;
-  color: #222;
+  color: #6f42c1;
 }
 
 @media (max-width: 450px) {
