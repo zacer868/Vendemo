@@ -159,32 +159,9 @@ table caption {
 
 /* Profile */
 
-.profile-box {
-  display: inline-block;
+#profile {
+  width: auto;
   height: auto;
-  width: 60%;
-  background-color: white;
-  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.144);
-  border-radius: 9px;
-}
-
-.imgcont {
-  width: 45%;
-  display: inline-block;
-}
-
-.info {
-  height: 45%;
-  width: 45%;
-  display: inline-block;
-}
-
-.info p {
-}
-
-.imgcont img {
-  margin: 10px;
-  width: 100px;
 }
 
 /* Media Queries */
