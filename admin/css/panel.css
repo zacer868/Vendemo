@@ -109,6 +109,11 @@ main {
 
 .details {
   margin: 10px;
+  font-size: 15px;
+}
+
+.head {
+  font-size: 20px;
 }
 
 .details.ico {
