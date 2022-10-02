@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="logo">
+            <a href="#">
+              <div class="logo_name">
+                <img src="img/logo.svg" alt="" />Vendemo
+              </div></a
+            >
+          </div>
+          <input type="checkbox" id="nav-check" />
+          <label for="nav-check" class="nav-toggler">
+            <span></span>
+          </label>
+          <nav class="nav">
+            <ul>
+              <li><a href="#" class="active">Dashboard</a></li>
+              <li><a href="#orders">Orders</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#"> Log out</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <h1>Link <a href="admin/admin.html">here</a></h1>
   </body>
 </html>
